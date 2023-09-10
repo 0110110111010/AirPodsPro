@@ -19,6 +19,7 @@ button{
     padding: 0;
     border: none;
     background-color: transparent;
+    cursor: pointer;
 }
 
 ul{
@@ -43,15 +44,82 @@ body{
 }
 
 .header{
-    background: linear-gradient(180deg, #cadbeb 0%, rgba(
-    235, 235, 235, 0.00)  100%);
     height: 100vh;
+    position: relative;
 }
 
 
 .header__top{
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+
+
+.menu__list{
+    display: flex;
+    align-items: center;
     gap: 0 40px;
     font-weight: 700;
+}
+
+.menu__btn{
+    padding: 15px 58px;
+    border-radius: 30px;
+    background-color: black;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.header__contant-images{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+
+.header__contant-images::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    bottom: 0;
+    background: linear-gradient(180deg, #cadbeb 0%, rgba(
+    235, 235, 235, 0.00)  100%);
+    z-index: -2;
+}
+
+
+.title{
+    font-size: 210px;
+    font-weight: 700;
+    position: absolute;
+    padding-top: 200px;
+}
+
+
+.title--pod{
+    position: relative;
+    z-index: -1;
+}
+
+.title--s{
+    display: inline-block;
+    transform: translateY(60px);
+}
+
+
+.title--m{
+    display: inline-block;
+    transform: translate(-37px,300px);
+}
+
+.title--ax{
+    display: inline-block;
+    transform: translate(-160px,430px);
+    z-index: -1;
+    position: relative;
 }
